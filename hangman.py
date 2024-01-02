@@ -56,3 +56,14 @@ print('The goal of the game is to find the word that the computer has selected.\
 print('The word will be represented by dashes. You find the word by guessing one letter at a time. You can only guess a letter once.\n')
 print("Guessing a letter correctly will display the letter in it's position. An incorrect guess will cost you one life.\n")
 print('Good luck, and have fun!\n')
+
+def startGame():
+    while True:
+        user_input = input('Type "start" to begin: ')
+        if user_input == 'start' or user_input == 'Start':
+            hangman()
+            break
+        else:
+            print('Invalid input.')
+
+startGame()
