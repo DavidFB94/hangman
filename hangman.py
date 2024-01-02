@@ -57,7 +57,7 @@ print('The word will be represented by dashes. You find the word by guessing one
 print("Guessing a letter correctly will display the letter in it's position. An incorrect guess will cost you one life.\n")
 print('Good luck, and have fun!\n')
 
-def startGame():
+def start_game():
     while True:
         user_input = input('Type "start" to begin: ')
         if user_input == 'start' or user_input == 'Start':
