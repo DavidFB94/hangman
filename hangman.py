@@ -37,3 +37,9 @@ def hangman():
             else:
                 lives = lives - 1 #takes away a life if wrong
                 print('Letter is not in word.')
+
+        elif user_letter in used_letters:
+            print('You have already used that character. Please try again.')
+
+        else:
+            print('Invalid character(s). Please try again.')
