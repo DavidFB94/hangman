@@ -2,6 +2,7 @@ import os
 import random
 import string
 import time
+from simple_term_menu import TerminalMenu
 from words import words
 
 
@@ -10,6 +11,13 @@ def clear():
     Clear function to clean-up the terminal so things don't get messy.
     """
     os.system("cls" if os.name == "nt" else "clear")
+
+
+def select_category():
+    options = ["[1] Mixed Words", "[2] Animals", "[3] Countries", "[4] Food"]
+    terminal_menu = TerminalMenu(options)
+    menu_entry_index = terminal_menu.show()
+    print(f"You have selected {options[menu_entry_index]}!")
 
 
 def get_valid_word(words):
