@@ -14,6 +14,9 @@ def clear():
 
 
 def select_category():
+    print('Use the up/down arrow keys to cycle the options, ENTER to select,')
+    print('or press a number key\n')
+    print('Pick your category:\n')
     options = ["[1] Mixed Words", "[2] Animals", "[3] Countries", "[4] Food"]
     terminal_menu = TerminalMenu(options)
     menu_entry_index = terminal_menu.show()
