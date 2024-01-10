@@ -17,6 +17,7 @@ def get_valid_word(words):
 
     return word.upper()
 
+
 def hangman():
     word = get_valid_word(words)
     word_letters = set(word) # letters in word
@@ -40,6 +41,7 @@ def hangman():
         print('\nCurrent word: ', ' '.join(word_list))
 
         user_letter = input('Guess a letter: ').upper()
+        clear()
         if user_letter in alphabet - used_letters:
             used_letters.add(user_letter)
             if user_letter in word_letters:
