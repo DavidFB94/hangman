@@ -27,6 +27,10 @@ def hangman():
 
     # getting user input
     while len(word_letters) > 0 and lives > 0:
+        # letters used and lives remaining
+        l = 'lives'
+        if lives == 1:
+            l = 'life'
         print(f'\nYou have {lives} {l} left and you have used these letters:', end=' ')
         for letter in used_letters:
             print(letter, end=' ')
