@@ -87,13 +87,22 @@ def play_again():
 
 
 def start_game():
+    print('Welcome to hangman!\n')
+    print('The goal of the game is to find the word that the computer has selected.\n')
+    print('The word will be represented by dashes. You find the word by guessing one letter at a time. You can only guess a letter once.\n')
+    print("Guessing a letter correctly will display the letter in its position. An incorrect guess will cost you one life.\n")
+    print('Good luck, and have fun!\n')
     while True:
-        user_input = input('Type "start" to begin: ')
-        if user_input == 'start' or user_input == 'Start':
-            hangman()
+        user_input = input('Press ENTER to start')
+        clear()
+        print('Loading game...')
+        time.sleep(1)
+        clear()
+        hangman()
+        again = play_again()
+        if not again:
             break
-        else:
-            print('Invalid input.')
+
 
 if __name__ == '__main__':
     clear()
