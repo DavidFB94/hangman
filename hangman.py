@@ -1,6 +1,13 @@
 import random
 from words import words
-import string
+
+
+def clear():
+    """
+    Clear function to clean-up the terminal so things don't get messy.
+    """
+    os.system("cls" if os.name == "nt" else "clear")
+
 
 def get_valid_word(words):
     # randomly chooses something from the list
