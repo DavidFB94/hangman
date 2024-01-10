@@ -83,4 +83,6 @@ def start_game():
         else:
             print('Invalid input.')
 
-startGame()
+if __name__ == '__main__':
+    clear()
+    start_game()
