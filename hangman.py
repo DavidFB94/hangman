@@ -87,9 +87,9 @@ def hangman():
 
     # gets here when len(word_letters) == 0 OR when lives == 0
     if lives == 0:
-        print('You died, sorry. The word was', word + '.')
+        print(f'You died, sorry. The word was {word}.')
     else:
-        print('You guessed the word', word, '!!')
+        print(f'You guessed the word, {word} and you had {lives} {l} remanining!!')
 
 
 def play_again():
