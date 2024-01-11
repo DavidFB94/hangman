@@ -23,7 +23,9 @@ def select_category():
     options = ["[1] Mixed Words", "[2] Animals", "[3] Countries", "[4] Food"]
     terminal_menu = TerminalMenu(options)
     menu_entry_index = terminal_menu.show()
+    clear()
     print(f"You have selected {options[menu_entry_index]}!")
+    return menu_entry_index
 
 
 def get_valid_word(words):
