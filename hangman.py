@@ -4,6 +4,9 @@ import string
 import time
 from simple_term_menu import TerminalMenu
 from words import words
+from animals import animals
+from countries import countries
+from food import foods
 
 
 def clear():
