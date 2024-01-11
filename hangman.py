@@ -22,24 +22,23 @@ def select_category():
     print('Pick your category:\n')
     options = ["[1] Mixed Words", "[2] Animals", "[3] Countries", "[4] Food"]
     terminal_menu = TerminalMenu(options)
-    menu_entry_index = terminal_menu.show()
+    menu_number = terminal_menu.show()
     clear()
-    print(f"You have selected {options[menu_entry_index]}!")
-    return menu_entry_index
+    print(f"You have selected {options[menu_number]}!")
+    if menu_number == 0:  # mixed words
+        return words
+    elif menu_number == 1:  # animals
+        return animals
+    elif menu_number == 2:  # countries
+        return countries
+    elif menu_number == 3:  # foods
+        return foods
 
 
 def get_valid_word():
-    menu_entry_index = select_category()
-    # selects which list to pick a word from, based on selected category
-    if menu_entry_index == 0:
-        word = random.choice(words)
-    elif menu_entry_index == 1:
-        word = random.choice(animals)
-    elif menu_entry_index == 2:
-        word = random.choice(countries)
-    elif menu_entry_index == 3:
-        word = random.choice(foods)
+    category = select_category()
     # randomly chooses a word from the chosen category list
+    word = random.choice(category)
     while '-' in word or ' ' in word:
         word = random.choice(words)
 
