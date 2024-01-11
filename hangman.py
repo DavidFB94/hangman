@@ -28,9 +28,18 @@ def select_category():
     return menu_entry_index
 
 
-def get_valid_word(words):
-    # randomly chooses something from the list
-    word = random.choice(words)
+def get_valid_word():
+    menu_entry_index = select_category()
+    # selects which list to pick a word from, based on selected category
+    if menu_entry_index == 0:
+        word = random.choice(words)
+    elif menu_entry_index == 1:
+        word = random.choice(animals)
+    elif menu_entry_index == 2:
+        word = random.choice(countries)
+    elif menu_entry_index == 3:
+        word = random.choice(foods)
+    # randomly chooses a word from the chosen category list
     while '-' in word or ' ' in word:
         word = random.choice(words)
 
@@ -38,7 +47,7 @@ def get_valid_word(words):
 
 
 def hangman():
-    word = get_valid_word(words)
+    word = get_valid_word()
     word_letters = set(word) # letters in word
     alphabet = set(string.ascii_uppercase)
     used_letters = set() # what the user has guessed
@@ -113,8 +122,6 @@ def start_game():
         clear()
         print('Loading game...')
         time.sleep(1)
-        clear()
-        select_category()
         clear()
         hangman()
         again = play_again()
