@@ -55,9 +55,9 @@ def hangman():
     lives = None
 
     if word_length <= 4:
-        lives = 10
-    elif 4 < word_length <= 8:
         lives = 8
+    elif 4 < word_length <= 8:
+        lives = 7
     else:
         lives = 6
 
@@ -74,6 +74,7 @@ def hangman():
         word_list = [letter if letter in used_letters else '-' for letter in word]
         print('\nCurrent word: ', ' '.join(word_list))
 
+        # getting user input
         user_letter = input('Guess a letter: ').upper()
         clear()
         if user_letter in alphabet - used_letters:
@@ -90,19 +91,19 @@ def hangman():
             print(f'You have already used {user_letter}. Please try again.')
 
         else:
-            print(f'{user_letter} is invalid. Please try again.')
+            print(f'{user_letter} is invalid. Please use alphabetical letters.')
 
     # gets here when len(word_letters) == 0 OR when lives == 0
     if lives == 0:
         print(f'You died, sorry. The word was {word}.')
     else:
-        print(f'You guessed the word, {word} and you had {lives} {l} remanining!!')
+        print(f'You guessed the word {word} and you had {lives} {l} remanining!!')
 
 
 def play_again():
     again = True
     while True:
-        user_input = input('Do you want to play again? y/n: ').lower()
+        user_input = input('Do you want to play again? y/n + ENTER: ').lower()
         clear()
         if user_input == 'y':
             break
@@ -113,7 +114,7 @@ def play_again():
             clear()
             break
         else:
-            print(f'{user_input} is invalid. Please try again.')
+            print(f'{user_input} is invalid. Please use the correct input.')
     return again
 
 
