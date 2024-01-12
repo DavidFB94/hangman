@@ -2,11 +2,16 @@ import os
 import random
 import string
 import time
+import colorama
+from colorama import Fore, Back, Style
 from simple_term_menu import TerminalMenu
 from words import words
 from animals import animals
 from countries import countries
 from food import foods
+
+
+colorama.init(autoreset=True)
 
 
 def clear():
