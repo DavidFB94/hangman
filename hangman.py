@@ -20,7 +20,7 @@ def select_category():
     print('Use the up/down arrow keys to cycle the options, ENTER to select,')
     print('or press a number key\n')
     print('Pick your category:\n')
-    options = ["[1] Mixed Words", "[2] Animals", "[3] Countries", "[4] Food"]
+    options = ["[1] Mixed Words", "[2] Animals", "[3] Countries", "[4] Food & drinks"]
     terminal_menu = TerminalMenu(options)
     menu_number = terminal_menu.show()
     clear()
@@ -31,7 +31,7 @@ def select_category():
         return animals
     elif menu_number == 2:  # countries
         return countries
-    elif menu_number == 3:  # foods
+    elif menu_number == 3:  # foods & drinks
         return foods
 
 
