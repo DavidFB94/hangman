@@ -29,14 +29,14 @@ def select_category():
     terminal_menu = TerminalMenu(options)
     menu_number = terminal_menu.show()
     clear()
-    print(f"You have selected {options[menu_number]}!")
+    print(f"You have selected {Fore.CYAN}{options[menu_number]}{Fore.RESET}!")
     if menu_number == 0:  # mixed words
         return words
     elif menu_number == 1:  # animals
         return animals
     elif menu_number == 2:  # countries
         return countries
-    elif menu_number == 3:  # foods & drinks
+    elif menu_number == 3:  # food & drinks
         return foods
 
 
@@ -71,9 +71,9 @@ def hangman():
         l = 'lives'
         if lives == 1:
             l = 'life'
-        print(f'\nYou have {lives} {l} left and you have used these letters:', end=' ')
+        print(f'\nYou have {Fore.MAGENTA}{lives} {l}{Fore.RESET} left and you have used these letters:', end=' ')
         for letter in used_letters:
-            print(letter, end=' ')
+            print(f'{Fore.YELLOW}{letter}', end=' ')
 
         # what current word is (ie W - R D)
         word_list = [letter if letter in used_letters else '-' for letter in word]
@@ -86,35 +86,40 @@ def hangman():
             used_letters.add(user_letter)
             if user_letter in word_letters:
                 word_letters.remove(user_letter)
-                print(f'{user_letter} is in the word.')
+                print(f'{Fore.GREEN}{user_letter} is in the word{Fore.RESET}')
 
             else:
                 lives = lives - 1 #takes away a life if wrong
-                print(f'{user_letter} is not in the word.')
+                print(f'{Fore.RED}{user_letter} is not in the word{Fore.RESET}')
 
         elif user_letter in used_letters:
-            print(f'You have already used {user_letter}. Please try again.')
+            print(f'You have already used {user_letter}. Try again.')
 
         else:
             print(f'{user_letter} is invalid. Please use alphabetical letters.')
 
     # gets here when len(word_letters) == 0 OR when lives == 0
     if lives == 0:
-        print(f'You died, sorry. The word was {word}.')
+        clear()
+        print(f'{Fore.RED}You died{Fore.RESET}\n')
+        print(f'The word was {Style.BRIGHT}{Fore.GREEN}{word}{Fore.RESET}{Style.RESET_ALL}.\n')
     else:
-        print(f'You guessed the word {word} and you had {lives} {l} remanining!!')
+        clear()
+        print(f'{Fore.GREEN}You won!')
+        print(f'You found the word: {Style.BRIGHT}{Fore.GREEN}{word}{Fore.RESET}{Style.RESET_ALL}!!!\n')
+        print(f'You had {Fore.MAGENTA}{lives} {l}{Fore.RESET} remanining.\n')
 
 
 def play_again():
     again = True
     while True:
-        user_input = input('Do you want to play again? y/n + ENTER: ').lower()
+        user_input = input(f'Do you want to {Style.BRIGHT}{Fore.BLUE}play again?{Style.RESET_ALL}{Fore.RESET} y/n + ENTER: ').lower()
         clear()
         if user_input == 'y':
             break
         elif user_input == 'n':
             again = False
-            print('Thank you for playing Hangman!')
+            print(f'Thank you for playing {Style.BRIGHT}HANGMAN{Style.RESET_ALL}!')
             time.sleep(3)
             clear()
             break
@@ -124,13 +129,14 @@ def play_again():
 
 
 def start_game():
-    print('Welcome to hangman!\n')
-    print('The goal of the game is to find the word that the computer has selected.\n')
-    print('The word will be represented by dashes. You find the word by guessing\n one letter at a time. You can only guess a letter once.\n')
-    print('Guessing a letter correctly will display the letter in its position.\n An incorrect guess will cost you one life.\n')
-    print('Good luck, and have fun!\n')
+    print(f'Welcome to {Style.BRIGHT}HANGMAN{Style.RESET_ALL}!\n')
+    print(f'The goal of the game is to find the {Fore.GREEN}word{Fore.RESET} that the computer has selected.\n')
+    print(f'The {Fore.GREEN}word{Fore.RESET} will be represented by dashes. You find the {Fore.GREEN}word{Fore.RESET} by guessing\n one {Fore.YELLOW}letter{Fore.RESET} at a time. You can only guess a {Fore.YELLOW}letter{Fore.RESET} once.\n')
+    print(f'Guessing a {Fore.YELLOW}letter{Fore.RESET} {Fore.GREEN}correctly{Fore.RESET} will display the {Fore.YELLOW}letter{Fore.RESET} in its position.\n An {Fore.RED}incorrect{Fore.RESET} guess will cost you one {Fore.MAGENTA}life{Fore.RESET}.\n')
+    print(f'When you run out of {Fore.MAGENTA}lives{Fore.RESET}, you {Fore.RED}die{Fore.RESET}.\n')
+    print(f'{Style.BRIGHT}Good luck, and have fun!\n')
     while True:
-        user_input = input('Press ENTER to start')
+        user_input = input(f'Press {Back.WHITE}{Style.BRIGHT} ENTER {Style.RESET_ALL}{Back.RESET} to start')
         clear()
         print('Loading game...')
         time.sleep(1)
