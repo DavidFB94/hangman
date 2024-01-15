@@ -41,6 +41,11 @@ def select_category():
 
 
 def get_valid_word():
+    """
+    Pulls word from category list, based on selected category.
+    Checks that the word is one word, with no spaces or hyphens.
+    Returns a valid word from the category list, in uppcase.
+    """
     category = select_category()
     # randomly chooses a word from the chosen category list
     word = random.choice(category)
