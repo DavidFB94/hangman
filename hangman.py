@@ -52,6 +52,10 @@ def get_valid_word():
 
 
 def hangman():
+    """
+    Main game function. Sets lives and displays the word as dashes.
+    Calls for user input to guess letters, and displays feedback messages.
+    """
     word = get_valid_word()
     word_letters = set(word) # letters in word
     alphabet = set(string.ascii_uppercase)
@@ -60,6 +64,7 @@ def hangman():
 
     lives = None
 
+    # set lives depending on word length
     if word_length <= 4:
         lives = 8
     elif 4 < word_length <= 8:
@@ -68,31 +73,35 @@ def hangman():
         lives = 6
 
     while len(word_letters) > 0 and lives > 0:
-        # letters used and lives remaining
+       # displays lives as pluras or singular, based on lives remaining
         l = 'lives'
         if lives == 1:
             l = 'life'
+        # letters used and lives remaining
         print(f'\nYou have {Style.BRIGHT}{Fore.MAGENTA}{lives} {l}{Fore.RESET}{Style.RESET_ALL} left and you have used these letters:', end=' ')
         for letter in used_letters:
             print(f'{Fore.YELLOW}{letter}', end=' ')
 
-        # what current word is (ie W - R D)
+        # current word progress (ie W - R D)
         word_list = [letter if letter in used_letters else '-' for letter in word]
         print('\n\nCurrent word:', ' '.join(word_list))
 
-        # getting user input
+        # getting user input and feedback messages
         user_letter = input('\nGuess a letter: ').upper()
         clear()
+        # checks if the guessed letter is in the word, if the character is from the alphabet, removes if from word_letters, and adds it to used_letters
         if user_letter in alphabet - used_letters:
             used_letters.add(user_letter)
             if user_letter in word_letters:
                 word_letters.remove(user_letter)
+                # feedback if guess was correct
                 print(f'{Fore.GREEN}{user_letter} is in the word{Fore.RESET}')
 
             else:
-                lives = lives - 1 #takes away a life if wrong
+                lives = lives - 1 # takes away a life if wrong, and alerts the user
                 print(f'{Fore.RED}{user_letter} is not in the word{Fore.RESET}')
 
+        # input alert and if letter has already been used
         elif user_letter in used_letters:
             print(f'You have already used {user_letter}. Try again.')
 
@@ -100,6 +109,7 @@ def hangman():
             print(f'{user_letter} is invalid. Please use alphabetical letters.')
 
     # gets here when len(word_letters) == 0 OR when lives == 0
+    # end of game messages
     if lives == 0:
         clear()
         print(f'{Fore.RED}You died{Fore.RESET}\n')
