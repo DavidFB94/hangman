@@ -169,7 +169,7 @@ def start_game():
     print(f'When you run out of {Style.BRIGHT}{Fore.MAGENTA}lives{Fore.RESET}{Style.RESET_ALL}, you {Fore.RED}die{Fore.RESET}.\n')
     print(f'{Style.BRIGHT}Good luck, and have fun!\n')
     while True:
-        user_input = input(f'Press {Back.WHITE}{Style.BRIGHT} ENTER {Style.RESET_ALL}{Back.RESET} to start')
+        user_input = input(f'Press {Back.WHITE}{Fore.BLACK}{Style.BRIGHT} ENTER {Style.RESET_ALL}{Fore.RESET}{Back.RESET} to start')
         clear()
         # simulating game loading
         print('Loading game...')
