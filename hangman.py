@@ -72,16 +72,16 @@ def hangman():
         l = 'lives'
         if lives == 1:
             l = 'life'
-        print(f'\nYou have {Fore.MAGENTA}{lives} {l}{Fore.RESET} left and you have used these letters:', end=' ')
+        print(f'\nYou have {Style.BRIGHT}{Fore.MAGENTA}{lives} {l}{Fore.RESET}{Style.RESET_ALL} left and you have used these letters:', end=' ')
         for letter in used_letters:
             print(f'{Fore.YELLOW}{letter}', end=' ')
 
         # what current word is (ie W - R D)
         word_list = [letter if letter in used_letters else '-' for letter in word]
-        print('\nCurrent word: ', ' '.join(word_list))
+        print('\n\nCurrent word:', ' '.join(word_list))
 
         # getting user input
-        user_letter = input('Guess a letter: ').upper()
+        user_letter = input('\nGuess a letter: ').upper()
         clear()
         if user_letter in alphabet - used_letters:
             used_letters.add(user_letter)
@@ -106,9 +106,9 @@ def hangman():
         print(f'The word was {Style.BRIGHT}{Fore.GREEN}{word}{Fore.RESET}{Style.RESET_ALL}.\n')
     else:
         clear()
-        print(f'{Fore.GREEN}You won!')
+        print(f'{Fore.GREEN}You won!\n')
         print(f'You found the word: {Style.BRIGHT}{Fore.GREEN}{word}{Fore.RESET}{Style.RESET_ALL}!!!\n')
-        print(f'You had {Fore.MAGENTA}{lives} {l}{Fore.RESET} remanining.\n')
+        print(f'You had {Style.RESET_ALL}{Fore.MAGENTA}{lives} {l}{Fore.RESET}{Style.RESET_ALL} remanining.\n')
 
 
 def play_again():
@@ -134,7 +134,7 @@ def start_game():
     print(f'The goal of the game is to find the {Fore.GREEN}word{Fore.RESET} that the computer has selected.\n')
     print(f'The {Fore.GREEN}word{Fore.RESET} will be represented by dashes. You find the {Fore.GREEN}word{Fore.RESET} by guessing\n one {Fore.YELLOW}letter{Fore.RESET} at a time. You can only guess a {Fore.YELLOW}letter{Fore.RESET} once.\n')
     print(f'Guessing a {Fore.YELLOW}letter{Fore.RESET} {Fore.GREEN}correctly{Fore.RESET} will display the {Fore.YELLOW}letter{Fore.RESET} in its position.\n An {Fore.RED}incorrect{Fore.RESET} guess will cost you one {Fore.MAGENTA}life{Fore.RESET}.\n')
-    print(f'When you run out of {Fore.MAGENTA}lives{Fore.RESET}, you {Fore.RED}die{Fore.RESET}.\n')
+    print(f'When you run out of {Style.RESET_ALL}{Fore.MAGENTA}lives{Fore.RESET}{Style.RESET_ALL}, you {Fore.RED}die{Fore.RESET}.\n')
     print(f'{Style.BRIGHT}Good luck, and have fun!\n')
     while True:
         user_input = input(f'Press {Back.WHITE}{Style.BRIGHT} ENTER {Style.RESET_ALL}{Back.RESET} to start')
