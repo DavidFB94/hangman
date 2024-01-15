@@ -44,8 +44,9 @@ def get_valid_word():
     category = select_category()
     # randomly chooses a word from the chosen category list
     word = random.choice(category)
+    # checks the word for spaces or hyphens
     while '-' in word or ' ' in word:
-        word = random.choice(words)
+        word = random.choice(category)
 
     return word.upper()
 
