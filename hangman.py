@@ -16,7 +16,7 @@ colorama.init(autoreset=True)
 
 def clear():
     """
-    Clear function to clean-up the terminal so things don't get messy.
+    Clear function to clean-up the terminal to avoid text clutter.
     """
     os.system("cls" if os.name == "nt" else "clear")
 
