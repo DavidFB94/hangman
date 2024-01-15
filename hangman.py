@@ -82,12 +82,12 @@ def hangman():
         lives = 6
 
     while len(word_letters) > 0 and lives > 0:
-       # displays lives as pluras or singular, based on lives remaining
-        l = 'lives'
+        # displays lives as pluras or singular, based on lives remaining
+        lives_or_life = 'lives'
         if lives == 1:
-            l = 'life'
+            lives_or_life = 'life'
         # letters used and lives remaining
-        print(f'\nYou have {Style.BRIGHT}{Fore.MAGENTA}{lives} {l}{Fore.RESET}{Style.RESET_ALL} left and you have used these letters:', end=' ')
+            f'{lives_or_life}{Style.RESET_ALL} left '
         for letter in used_letters:
             print(f'{Fore.YELLOW}{letter}', end=' ')
 
