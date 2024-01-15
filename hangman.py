@@ -127,7 +127,7 @@ def hangman():
         clear()
         print(f'{Fore.GREEN}You won!\n')
         print(f'You found the word: {Style.BRIGHT}{Fore.GREEN}{word}{Fore.RESET}{Style.RESET_ALL}!!!\n')
-        print(f'You had {Style.RESET_ALL}{Fore.MAGENTA}{lives} {l}{Fore.RESET}{Style.RESET_ALL} remanining.\n')
+        print(f'You had {Style.BRIGHT}{Fore.MAGENTA}{lives} {l}{Fore.RESET}{Style.RESET_ALL} remanining.\n')
 
 
 def play_again():
@@ -165,8 +165,8 @@ def start_game():
     print(f'Welcome to {Style.BRIGHT}HANGMAN{Style.RESET_ALL}!\n')
     print(f'The goal of the game is to find the {Fore.GREEN}word{Fore.RESET} that the computer has selected.\n')
     print(f'The {Fore.GREEN}word{Fore.RESET} will be represented by dashes. You find the {Fore.GREEN}word{Fore.RESET} by guessing\n one {Fore.YELLOW}letter{Fore.RESET} at a time. You can only guess a {Fore.YELLOW}letter{Fore.RESET} once.\n')
-    print(f'Guessing a {Fore.YELLOW}letter{Fore.RESET} {Fore.GREEN}correctly{Fore.RESET} will display the {Fore.YELLOW}letter{Fore.RESET} in its position.\n An {Fore.RED}incorrect{Fore.RESET} guess will cost you one {Fore.MAGENTA}life{Fore.RESET}.\n')
-    print(f'When you run out of {Style.RESET_ALL}{Fore.MAGENTA}lives{Fore.RESET}{Style.RESET_ALL}, you {Fore.RED}die{Fore.RESET}.\n')
+    print(f'Guessing a {Fore.YELLOW}letter{Fore.RESET} {Fore.GREEN}correctly{Fore.RESET} will display the {Fore.YELLOW}letter{Fore.RESET} in its position.\n An {Fore.RED}incorrect{Fore.RESET} guess will cost you one {Style.BRIGHT}{Fore.MAGENTA}life{Fore.RESET}{Style.RESET_ALL}.\n')
+    print(f'When you run out of {Style.BRIGHT}{Fore.MAGENTA}lives{Fore.RESET}{Style.RESET_ALL}, you {Fore.RED}die{Fore.RESET}.\n')
     print(f'{Style.BRIGHT}Good luck, and have fun!\n')
     while True:
         user_input = input(f'Press {Back.WHITE}{Style.BRIGHT} ENTER {Style.RESET_ALL}{Back.RESET} to start')
