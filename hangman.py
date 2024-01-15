@@ -106,7 +106,7 @@ def hangman():
         print('\n\nCurrent word:', ' '.join(word_list))
 
         # getting user input and feedback messages
-        user_letter = input('\nGuess a letter: ').upper()
+        user_letter = input('\nGuess a letter + ENTER: ').upper()
         clear()
         # checks if the guessed letter is in the word, if the character is
         # from the alphabet, removes if from word_letters,
