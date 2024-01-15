@@ -112,6 +112,12 @@ def hangman():
 
 
 def play_again():
+    """
+    Request user input (lowercase) when game is ended. 
+    If y, return again as True.
+    If n, return again as False.
+    If n, display exiting game message.
+    """
     again = True
     while True:
         user_input = input(f'Do you want to {Style.BRIGHT}{Fore.BLUE}play again?{Style.RESET_ALL}{Fore.RESET} y/n + ENTER: ').lower()
@@ -125,6 +131,7 @@ def play_again():
             clear()
             break
         else:
+            # input alert message
             print(f'{user_input} is invalid. Please use the correct input.')
     return again
 
