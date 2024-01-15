@@ -235,7 +235,7 @@ def start_game():
     )
     print(f'{Style.BRIGHT}Good luck, and have fun!\n')
     while True:
-        user_input = input(f'Press {Back.WHITE}{Fore.BLACK}{Style.BRIGHT} ENTER {Style.RESET_ALL}{Fore.RESET}{Back.RESET} to start')
+        user_input = input(f'Press {Back.WHITE}{Fore.BLACK}{Style.BRIGHT} ENTER {Style.RESET_ALL} to start')  # noqa
         clear()
         # simulating game loading
         print('Loading game...')
