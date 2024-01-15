@@ -22,6 +22,10 @@ def clear():
 
 
 def select_category():
+    """
+    Category selection. Presents a simple terminal menu and instructions how to navigate it.
+    Returns the selected category for use in get_valid_word().
+    """
     print('Use the up/down arrow keys to cycle the options, ENTER to select,')
     print('or press a number key\n')
     print('Pick your category:\n')
