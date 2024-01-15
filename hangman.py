@@ -130,6 +130,12 @@ def play_again():
 
 
 def start_game():
+    """
+    Run game function. Displays welcome message with rules.
+    Requests user input to start game.
+    Stops game if play_again() returns again as False.
+    If again = True, restarts the game.
+    """
     print(f'Welcome to {Style.BRIGHT}HANGMAN{Style.RESET_ALL}!\n')
     print(f'The goal of the game is to find the {Fore.GREEN}word{Fore.RESET} that the computer has selected.\n')
     print(f'The {Fore.GREEN}word{Fore.RESET} will be represented by dashes. You find the {Fore.GREEN}word{Fore.RESET} by guessing\n one {Fore.YELLOW}letter{Fore.RESET} at a time. You can only guess a {Fore.YELLOW}letter{Fore.RESET} once.\n')
@@ -139,6 +145,7 @@ def start_game():
     while True:
         user_input = input(f'Press {Back.WHITE}{Style.BRIGHT} ENTER {Style.RESET_ALL}{Back.RESET} to start')
         clear()
+        # simulating game loading
         print('Loading game...')
         time.sleep(1)
         clear()
