@@ -10,7 +10,7 @@ from animals import animals
 from countries import countries
 from food import foods
 
-
+# auto-resets styling after each row
 colorama.init(autoreset=True)
 
 
