@@ -229,3 +229,28 @@ You can fork this repository by using the following steps:
 
 In the web terminal (heroku), the first menu option in the category selection has a white square to the left that doesn't exist in the local deployment.
 
+## Credits
+
+### Content
+
+| Source | Location | Notes |
+| --- | --- | --- |
+| [Markdown Builder](https://tim.2bn.dev/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
+| [StackOverflow](https://stackoverflow.com/questions/594273/how-to-pick-a-random-english-word-from-a-list) | `words.py` | mixed word list |
+| [GitHub Gist](https://gist.github.com/atduskgreg/3cf8ef48cb0d29cf151bedad81553a54) | `animals.py` | animals word list |
+| [GitHub Gist](https://gist.github.com/kalinchernev/486393efcca01623b18d) | `countries.py` | countries word list |
+| [GeeksForGeeks](https://www.geeksforgeeks.org/clear-screen-python/) | `hangman.py` | how to create a clear terminal function |
+| [Pypi](https://pypi.org/project/simple-term-menu/) | `hangman.py` | simple terminal menu import |
+| [Pypi](https://pypi.org/project/colorama/) | `hangman.py` | terminal text color import |
+| [YouTube](https://www.youtube.com/watch?v=u51Zjlnui4Y&ab_channel=TechWithTim) | `hangman.py` | how to use Colorama |
+
+### Media
+
+| Source | Location | Type | Notes |
+| --- | --- | --- | --- |
+| [Pexels](https://www.pexels.com/sv-se/foto/tra-skylt-stapel-siffror-278887/) | entire site | image | favicon |
+
+### Acknowledgements
+
+- I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for their support throughout the development of this project.
+- I would like to thank my wife Maria, for believing in me, and allowing me to make this transition into software development.
