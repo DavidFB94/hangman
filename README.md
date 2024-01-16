@@ -38,7 +38,7 @@ Once the game was created, I wanted to add some color to the text, to make it a 
 
     - Multiple ways to select categories. Arrow keys or number input. 
 
-![screenshot](documentation/feature03.png)
+![screenshot](documentation/features/feature03.png)
 
 - **Used letters and lives tracking**
 
