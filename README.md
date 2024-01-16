@@ -65,8 +65,8 @@ Once the game was created, I wanted to add some color to the text, to make it a 
 
     - Informs the user if they have won/lost and displays the word. Request to play again.
 
-![screenshot](documentation/features/feature07-1.png)
 ![screenshot](documentation/features/feature07-2.png)
+![screenshot](documentation/features/feature07-1.png)
 
 - **"Thank you for playing" message**
 
