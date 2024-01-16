@@ -64,3 +64,43 @@ Defensive programming was manually tested with the below user acceptance testing
 ![screenshot](documentation/feature-testing/feature07.png)![screenshot](documentation/feature-testing/feature07-1.png)![screenshot](documentation/feature-testing/feature07-2.png)![screenshot](documentation/feature-testing/feature07-3.png)![screenshot](documentation/feature-testing/feature07-4.png)![screenshot](documentation/feature-testing/feature07-5.png)![screenshot](documentation/feature-testing/feature07-6.png) |
 | | Thank you for playing message is expected to display a message if the user choses to not play again | Tested the feature by finishing the game, and choosing to not play again | The feature behaved as expected | Test concluded and passed | ![screenshot](documentation/features/feature08.png) |
 
+## Bugs
+
+- Occasionally, the word that was selected did not match the selected category. 
+
+    ![screenshot](documentation/bugs/bug01.png)
+
+    - I used print statements to locate the bug. When words containing a "space" or "-" was selected, the function defaulted back to `words-py`.  To fix this, I had to replace "words" with "category" as the argument in the get_valid_word() while-loop.
+
+- Python `E741` (ambiguous variable name)
+
+    ![screenshot](documentation/bugs/bug02.png)
+
+    - To fix this, I changed the variable name.
+
+- Python `E501` line too long (108 > 79 characters)
+
+    ![screenshot](documentation/bugs/bug03.png)
+
+    - There were several of these errors. Most of them were re-formatted. To fix line 238, I added # noqa.
+
+## Unfixed Bugs
+
+- When in the terminal menu, hitting ESC and Q will cause a TypeError.
+
+   ![screenshot](documentation/unfixed-bugs/unfixed-bug01.png)
+
+    - Could not find fix.
+ 
+- CTRL + C will cause an KeyboardInterrupt (in category selecting it causes TypeError).
+
+    ![screenshot](documentation/unfixed-bugs/unfixed-bug02.png)
+
+    - Could not find fix.
+
+- When using the web terminal in Heroku, the first menu option has a white square to the left.
+
+    ![screenshot](documentation/unfixed-bugs/unfixed-bug03.png)
+
+    - Could not find fix.
+
