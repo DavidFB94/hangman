@@ -107,11 +107,11 @@ Below is the flowchart of the main process of this Python program. It shows the 
 The primary functions used on this application are:
 
 - `start_game()`
-    - Runs game on startup
+    - Runs/exits game
 - `select_category()`
     - Menu for category selection
 - `get_valid_word()`
-    - Pulls a valid word for the user to guess
+    - Pulls a valid word for the user to guess, based on category selection
 - `hangman()`
     - The game. Sets lives, word and asks for user input, with feedback
 - `play_again()`
