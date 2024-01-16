@@ -20,7 +20,7 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 I've tested my deployed project on multiple browsers to check for compatibility issues.
 
-| Browser | HerokuApp | Notes |
+| Browser | hangman.py | Notes |
 | --- | --- | --- |
 | Chrome | ![screenshot](documentation/browsers/chrome.png) | Works as expected |
 | Firefox | ![screenshot](documentation/browsers/firefox.png) | Works as expected |
@@ -30,7 +30,7 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 
 I've tested my deployed project on multiple devices to check for responsiveness issues.
 
-| Device | HerokuApp | Notes |
+| Device | hangman.py | Notes |
 | --- | --- | --- |
 | Mobile (DevTools) | ![screenshot](documentation/responsiveness/responsive-mobile.png) |  Works as expected. Not designed for mobile compatibility. |
 | Tablet (DevTools) | ![screenshot](documentation/responsiveness/responsive-tablet.png) | Works as expected. Not designed for tablet compatibility. |
@@ -43,4 +43,4 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 | Page | Mobile | Desktop | Notes |
 | --- | --- | --- | --- |
-| HerokuApp | ![screenshot](documentation/lighthouse/lighthouse-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-desktop.png) | Some minor warnings |
+| hangman.py | ![screenshot](documentation/lighthouse/lighthouse-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-desktop.png) | Some minor warnings |
