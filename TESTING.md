@@ -26,3 +26,14 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 | Firefox | ![screenshot](documentation/browsers/firefox.png) | Works as expected |
 | Edge | ![screenshot](documentation/browsers/edge.png) | Works as expected |
 
+## Responsiveness
+
+I've tested my deployed project on multiple devices to check for responsiveness issues.
+
+| Device | HerokuApp | Notes |
+| --- | --- | --- |
+| Mobile (DevTools) | ![screenshot](documentation/responsiveness/responsive-mobile.png) |  Works as expected. Not designed for mobile compatibility. |
+| Tablet (DevTools) | ![screenshot](documentation/responsiveness/responsive-tablet.png) | Works as expected. Not designed for tablet compatibility. |
+| Desktop | ![screenshot](documentation/browsers/chrome.png) | Works as expected |
+| Sony Xperia 10 | ![screenshot](documentation/responsiveness/responsive-xperia.jpg) | Scaling starts to have issues. Not designed for mobile compatibility. |
+
