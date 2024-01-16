@@ -130,3 +130,7 @@ I've used the following Python packages and/or external imported packages.
 - `string.ascii_uppercase`: used to create a set of alphabetical letters in uppercase for letters in word
 - `simple_term_menu`: used for adding a simple terminal menu for category choices
 
+## Testing
+
+For all testing, please refer to the [TESTING.md](TESTING.md) file.
+
