@@ -91,3 +91,42 @@ Once the game was created, I wanted to add some color to the text, to make it a 
 - [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
 - [ChatGPT](https://chat.openai.com/) used for creating list for `food.py`.
 
+## Data Model
+
+### Flowchart
+
+To follow best practice, a flowchart was created for the app's logic,
+and mapped out before coding began using a free version of [Miro](https://www.miro.com/).
+
+Below is the flowchart of the main process of this Python program. It shows the entire cycle of the program.
+
+![screenshot](documentation/flowchart.png)
+
+###  Functions
+
+The primary functions used on this application are:
+
+- `start_game()`
+    - Runs game on startup
+- `select_category()`
+    - Menu for category selection
+- `get_valid_word()`
+    - Pulls a valid word for the user to guess
+- `hangman()`
+    - The game. Sets lives, word and asks for user input, with feedback
+- `play_again()`
+    - Requests user to play again
+- `clear()`
+    -  Clears the terminal
+
+### Imports
+
+I've used the following Python packages and/or external imported packages.
+
+- `time`: used for adding time delays
+- `os`: used for adding a `clear()` function
+- `colorama`: used for including color in the terminal
+- `random`: used to get a random choice from a list
+- `string.ascii_uppercase`: used to create a set of alphabetical letters in uppercase for letters in word
+- `simple_term_menu`: used for adding a simple terminal menu for category choices
+
