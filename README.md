@@ -82,3 +82,12 @@ Once the game was created, I wanted to add some color to the text, to make it a 
 - Add more valid characters
     - Add functionality to use words with spaces and/or hyphens
 
+## Tools & Technologies Used
+
+- [Python](https://www.python.org) used as the back-end programming language.
+- [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
+- [GitHub](https://github.com) used for secure online code storage.
+- [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
+- [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
+- [ChatGPT](https://chat.openai.com/) used for creating list for `food.py`.
+
