@@ -12,3 +12,9 @@ This game was built as a project for the Diploma in Full Stack Software Developm
 
 ![screenshot](documentation/mockup.png)
 
+## UX
+
+I started out with a flowchart to determine the mapping of the app. After that I followed a tutorial to create the base structure, and adjusted the code to align with the ideas I had for the game.
+
+Once the game was created, I wanted to add some color to the text, to make it a bit more interesting/easy to look at. I imported Colorama, and added the styling to the code.
+
