@@ -37,3 +37,10 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 | Desktop | ![screenshot](documentation/browsers/chrome.png) | Works as expected |
 | Sony Xperia 10 | ![screenshot](documentation/responsiveness/responsive-xperia.jpg) | Scaling starts to have issues. Not designed for mobile compatibility. |
 
+## Lighthouse Audit
+
+I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
+
+| Page | Mobile | Desktop | Notes |
+| --- | --- | --- | --- |
+| HerokuApp | ![screenshot](documentation/lighthouse/lighthouse-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-desktop) | Some minor warnings |
