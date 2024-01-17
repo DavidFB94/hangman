@@ -40,6 +40,12 @@ Once the game was created, I wanted to add some color to the text, to make it a 
 
 ![screenshot](documentation/features/feature03.png)
 
+- **Category selection feedback**
+
+    - Lets user know which category was selected. 
+
+![screenshot](documentation/features/feature09.png)
+
 - **Used letters and lives tracking**
 
     - User stays informed about which letters has been guessed, and of lives remaining
