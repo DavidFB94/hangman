@@ -18,6 +18,7 @@ def clear():
     """
     Clear function to clean-up the terminal to avoid text clutter.
     """
+    # how to clear terminal, from Stackoverflow
     os.system("cls" if os.name == "nt" else "clear")
 
 
@@ -27,6 +28,7 @@ def select_category():
     and instructions how to navigate it.
     Returns the selected category for use in get_valid_word().
     """
+    # base menu structure from pypi
     print('Use the up/down arrow keys to cycle the options, ENTER to select,')
     print('or press a number key\n')
     print('Pick your category:\n')
@@ -53,6 +55,7 @@ def get_valid_word():
     Checks that the word is one word, with no spaces or hyphens.
     Returns a valid word from the category list, in uppcase.
     """
+    # basic structure for get_valid_word() created using YouTube tutorial
     category = select_category()
     # randomly chooses a word from the chosen category list
     word = random.choice(category)
@@ -68,6 +71,7 @@ def hangman():
     Main game function. Sets lives and displays the word as dashes.
     Calls for user input to guess letters, and displays feedback messages.
     """
+    # basic structure for hangman() created using YouTube tutorial
     word = get_valid_word()
     word_letters = set(word)  # letters in word
     alphabet = set(string.ascii_uppercase)
