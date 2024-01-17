@@ -229,6 +229,8 @@ In the web terminal (heroku), the first menu option in the category selection ha
 
 ## Credits
 
+The base for the game was built using a tutorial (see Content below) for `hangman()` and `get_valid_word()`. After that I adjusted/added to those functions, added imports, and built on other features and functionalities.
+
 ### Content
 
 | Source | Location | Notes |
