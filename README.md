@@ -235,12 +235,13 @@ In the web terminal (heroku), the first menu option in the category selection ha
 | --- | --- | --- |
 | [Markdown Builder](https://tim.2bn.dev/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
 | [StackOverflow](https://stackoverflow.com/questions/594273/how-to-pick-a-random-english-word-from-a-list) | `words.py` | mixed word list |
+| [StackOverflow](https://stackoverflow.com/questions/2084508/clear-the-terminal-in-python) | `hangman.py` | how to create a clear terminal function |
 | [GitHub Gist](https://gist.github.com/atduskgreg/3cf8ef48cb0d29cf151bedad81553a54) | `animals.py` | animals word list |
 | [GitHub Gist](https://gist.github.com/kalinchernev/486393efcca01623b18d) | `countries.py` | countries word list |
-| [GeeksForGeeks](https://www.geeksforgeeks.org/clear-screen-python/) | `hangman.py` | how to create a clear terminal function |
-| [Pypi](https://pypi.org/project/simple-term-menu/) | `hangman.py` | simple terminal menu import |
+| [Pypi](https://pypi.org/project/simple-term-menu/) | `hangman.py` | simple terminal menu import + basic menu code |
 | [Pypi](https://pypi.org/project/colorama/) | `hangman.py` | terminal text color import |
 | [YouTube](https://www.youtube.com/watch?v=u51Zjlnui4Y&ab_channel=TechWithTim) | `hangman.py` | how to use Colorama |
+| [YouTube](https://youtu.be/8ext9G7xspg?list=PLpoNk5Bn13ymKrQzy6I_q6YQEnb0LDZAw&t=1466) | `hangman.py` + `words.py` | tutorial for creating a basic Hangman game + how to import from a word list |
 
 ### Media
 
