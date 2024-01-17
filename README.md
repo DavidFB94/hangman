@@ -81,6 +81,7 @@ Once the game was created, I wanted to add some color to the text, to make it a 
     - Add functionality to limit response time
 - Add more valid characters
     - Add functionality to use words with spaces and/or hyphens
+- Add more categories
 
 ## Tools & Technologies Used
 
