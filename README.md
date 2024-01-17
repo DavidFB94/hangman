@@ -30,7 +30,7 @@ Once the game was created, I wanted to add some color to the text, to make it a 
 
 - **User input to start game**
 
-    - Makes sure the user has time to read the message/rules, and  has control over starting the game
+    - Makes sure the user has time to read the message/rules, and has control over starting the game.
 
 ![screenshot](documentation/features/feature02.png)
 
@@ -48,13 +48,13 @@ Once the game was created, I wanted to add some color to the text, to make it a 
 
 - **Used letters and lives tracking**
 
-    - User stays informed about which letters has been guessed, and of lives remaining
+    - User stays informed about which letters has been guessed, and of lives remaining.
 
 ![screenshot](documentation/features/feature04.png)
 
 - **Input feedback messages **
 
-    - Offers feedback to the user that the input has been received, if the guess was correct or not, and if the letter has been used already
+    - Offers feedback to the user that the input has been received, if the guess was correct or not, and if the letter has been used already.
 
 ![screenshot](documentation/features/feature05-1.png)
 ![screenshot](documentation/features/feature05-2.png)
@@ -62,7 +62,7 @@ Once the game was created, I wanted to add some color to the text, to make it a 
 
 - **Input alert-messages**
 
-    - Informs the user about invalid input
+    - Informs the user about invalid input.
 
 ![screenshot](documentation/features/feature06-1.png)
 ![screenshot](documentation/features/feature06-2.png)
@@ -76,7 +76,7 @@ Once the game was created, I wanted to add some color to the text, to make it a 
 
 - **"Thank you for playing" message**
 
-    - Lets the user know that the app is exiting
+    - Lets the user know that the app is exiting.
 
 ![screenshot](documentation/features/feature08.png)
 
