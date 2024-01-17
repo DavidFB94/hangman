@@ -52,7 +52,7 @@ Once the game was created, I wanted to add some color to the text, to make it a 
 
 ![screenshot](documentation/features/feature04.png)
 
-- **Input feedback messages **
+- **Input feedback messages**
 
     - Offers feedback to the user that the input has been received, if the guess was correct or not, and if the letter has been used already.
 
